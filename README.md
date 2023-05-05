@@ -1,59 +1,80 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/6ebMFVGY)
-# IE 555 Project Proposal Template
+<a name="br1"></a> <h2> Team Members:</h2>
+<b>
+- Bhavyanshu Rajendra Kadu[](mailto:bhavyans@buffalo.edu)[ ](mailto:bhavyans@buffalo.edu)[bhavyans@buffalo.edu
+](mailto:bhavyans@buffalo.edu)
+- Shubham Shankar Sathe[](mailto:ssathe@buffalo.edu)[ ](mailto:ssathe@buffalo.edu)[ssathe@buffalo.edu
+](mailto:ssathe@buffalo.edu)
+- Rahul Haribhau Shelke[](mailto:rahulhar@buffalo.edu)[ ](mailto:rahulhar@buffalo.edu)[rahulhar@buffalo.edu](mailto:rahulhar@buffalo.edu)
+</b>
+<h2>Proposed Project Title: </h2>
 
---- 
-**Note**:  The *[italicized]* content below is for your reference only.  Please remove these comments before submitting.
----
+<h3> Inventory Management using Binary Classiﬁers in Python </h3>
 
-## Team Members:  
-- **Name 1**, **UB Email Address 1** - This is the person who will submit the proposal
-- **Name 2**, **UB Email Address 2**
-- **Name 3**, **UB Email Address 3**
-- **Name 4**, **UB Email Address 4**
+<h2> Data Sources: </h2>
 
-*No more than 4 team members are allowed.  No exceptions.*
+<ins>**Historical Sales and Active Inventory Dataset:**</ins> 
+- This data source will contain historical sales data for
+the retail ﬁrm's inventory. The data will include information such as product ID, release year, price
+reg, and quantity sold. This data will enable us to identify which products are not selling well and
+should be considered for removal from the inventory.
 
----
+- The dataset is of the ﬁrm that has a large inventory, but only a small percentage of products sell
+each year, with many products only having a single sale annually. The sales and growth team
+wants to use historical sales data and active inventory to build a binary classiﬁer that will identify
+which products should be retained for sale and which products should be removed.
 
-## Proposed Project Title
+<h2>Data Source Link: <a href="https://www.kaggle.com/datasets/ﬂenderson/sales-analysis">Kaggle Dataset </a> </h2>
 
-- **Write a brief, but descriptive, title here**
+<h2>API Link: </h2>
+The dataset does not have an API link by itself so we will use a Kaggle package to create
+an API for our account using the Kaggle package in Python and we will dynamically load the
+dataset into our code.
 
---- 
+<h2>Analysis Plan:</h2>
 
-## Project Type
-*[Your group has two options for the course project.  Please select **one** option and provide the corresponding relevant information.]*
+1) As part of the analysis strategy, a binary classiﬁer model will be created that will categorize the
+ inventory's items as either "to be retained" or "to be removed\." The retail company's past sales data
+ and current inventories will be used to conduct the analysis\.
 
-### Option 1 - Research Paper
-*[Remove this section if you are **NOT** choosing Option 1.]*
-> Students may identify a relevant paper from an archived journal which features an algorithm/heuristic designed to solve a particular problem. This algorithm should be coded in Python and validated against the results published in the paper. A final report describing (a) the problem itself, (b) an overview of the solution procedure, (c) a description of how the test data were generating, (d) a summary of the various functions employed to execute the code, and (e) a “how-to” guide for running the Python code is expected.
+2) To ensure that the data are accurate and in the right format, data pretreatment will be the ﬁrst step
+ in the analysis plan\. In this step, duplicates and missing data will be eliminated, categorical data will
+ be transformed, and the data will be scaled\.
 
-#### Reference
-- *[Provide a citation to the journal article, including title, authors, journal name, year.]*
-
-#### Problem Description
-- *[Provide a description of the problem defined in the reference article.]*
-
-#### Algorithm Description
-- *[Provide a description of the algorithm defined in the reference article.]*
-
-#### Source Data
-- *[Concisely explain where you plan to obtain source data on which to test the algorithm.]*
-
-#### Motivation
-- *[Explain why you chose this paper.]*
+3) The data will then be divided into training and testing sets\. The binary classiﬁer model will be trained
+ using the training set, and its performance will be assessed using the testing set\.We will explore and
+ select diﬀerent classiﬁcation algorithms that are best suited for this type of data\. We may consider
+ algorithms such as logistic regression, decision trees, and Random forest classiﬁers\. The algorithm will
+ be selected based on its accuracy, R2 score, and any other methods necessary for calculating error\.
  
-### Option 2 - Online Data Analysis
-*[Remove this section if you are **NOT** choosing Option 2.]*
-> Students may develop their own programming project. In this option, students must identify a source of online data, which will be dynamically imported via Python. The Python code must utilize these data to either make decision support recommendations or provide a detailed analysis of the data. A YouTube video describing the mechanics of the Python code will be required, in addition to a “how-to” guide for running the code. All source code must be submitted, and the course instructor must be able to execute the code without errors.
+4) After choosing the algorithm, we will use the practice data set to train the binary classiﬁer model\.
+ Then, we will assess the model's performance using the testing data set to gauge its precision, R2
+ score, and F1 score\.
+ 
+5) As a last step, we will utilize the trained binary classiﬁer model to assign the items in the inventory to
+ one of two categories: "to be retained" or "to be removed." A list of the product IDs that must be kept
+ and a diﬀerent list of the product IDs that must be deleted will be provided.
 
-#### Data Sources
-- *[Provide a description of each data source you plan to use.]*
-    - *[For each data source, provide a link to the API documentation.]*
+Our team will be able to undertake this research thanks to the source data we've chosen because
+it includes both active inventory and historical sales information. The historical sales data will
+enable us to pinpoint the products that aren't doing well, and the active inventory data will notify
+us of the items that are now in stock. These two data sources can be used to create a binary
+classiﬁer model that can correctly categorize the inventory's items as "to be retained" or "to be
+removed."
 
-#### Analysis Plan
-- *[Clearly explain the analysis you will conduct with the data.]*
-- *[Clearly justify how the chosen source data will enable your team to conduct this analysis.]*
+<h2>Motivation:</h2>
 
-#### Motivation
-- *[Explain why you have chosen to conduct this analysis.  What is it about this data that interests you?]*
+- The primary goal of this research is to help a retail company's inventory be as eﬃcient as possible.
+The company can cut inventory holding costs, boost sales and proﬁtability, and make better use
+of its resources by deciding which products should be kept and which ones should be dropped.
+
+- Another intriguing aspect of this investigation is the development of a binary classiﬁer model. The
+analysis oﬀers a great chance to apply various classiﬁcation algorithms and assess their
+effectiveness because binary classiﬁcation is a fundamental machine-learning problem.
+
+- The analysis may also oﬀer insighꢃul information about consumer behavior and preferences. The
+company can better understand what customers want by determining which products aren't
+selling well, and they can then change their inventory.
+
+- In conclusion, the analysis is crucial for any retail company that wishes to stay effective, lucrative,
+and competitive. It oﬀers a chance to use machine learning methods on actual data, optimize
+inventories, and learn more about client behavior.

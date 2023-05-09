@@ -8,73 +8,59 @@
 </b>
 <h2>Proposed Project Title: </h2>
 
-<h3> Inventory Management using Binary Classiﬁers in Python </h3>
+<h3> Geospatial Analysis of Buffalo's Tree Species Distribution </h3>
 
 <h2> Data Sources: </h2>
 
-<ins>**Historical Sales and Active Inventory Dataset:**</ins> 
-- This data source will contain historical sales data for
-the retail ﬁrm's inventory. The data will include information such as product ID, release year, price
-reg, and quantity sold. This data will enable us to identify which products are not selling well and
-should be considered for removal from the inventory.
+- The "Geospatial Analysis of Buffalo's Tree Species Distribution" is a data-driven project that uses open data tree inventory data to uncover trends in the distribution of tree species across Buffalo, NY. The study entails mapping the position of trees and analyzing their association with environmental parameters such as climate using geospatial analysis. This project intends to provide significant insights into Buffalo's urban forest and influence decision-making regarding tree management and conservation by harnessing the extensive and detailed data supplied by the pendata buffalo tree inventory.
 
-- The dataset is of the ﬁrm that has a large inventory, but only a small percentage of products sell
-each year, with many products only having a single sale annually. The sales and growth team
-wants to use historical sales data and active inventory to build a binary classiﬁer that will identify
-which products should be retained for sale and which products should be removed.
+<h2>Data Source Link: https://data.buffalony.gov/Quality-of-Life/Tree-Inventory/n4ni-uuec </h2>
 
-<h2>Data Source Link: <a href="https://www.kaggle.com/datasets/ﬂenderson/sales-analysis">Kaggle Dataset </a> </h2>
+<h2>API Link: https://data.buffalony.gov/resource/n4ni-uuec.json  </h2>
 
-<h2>API Link: </h2>
-The dataset does not have an API link by itself so we will use a Kaggle package to create
-an API for our account using the Kaggle package in Python and we will dynamically load the
-dataset into our code.
 
 <h2>Analysis Plan:</h2>
 
-1) As part of the analysis strategy, a binary classiﬁer model will be created that will categorize the
- inventory's items as either "to be retained" or "to be removed\." The retail company's past sales data
- and current inventories will be used to conduct the analysis\.
+<ins> **Data Preparation</ins>:** Import the pendata buffalo tree inventory data into a Python environment and clean and preprocess the data as appropriate. This could include deleting duplicates, filling in blanks, and standardizing variable names. In addition, gather and preprocess any relevant geographical data sources, such as satellite imagery or land cover data.
 
-2) To ensure that the data are accurate and in the right format, data pretreatment will be the ﬁrst step
- in the analysis plan\. In this step, duplicates and missing data will be eliminated, categorical data will
- be transformed, and the data will be scaled\.
+<ins> **Data Exploration</ins>:** Perform preliminary exploratory data analysis to gain a better grasp of the data and to find any patterns or trends. Using tools such as Pandas, Matplotlib, and Seaborn, you may be able to create visualizations and summary statistics.
 
-3) The data will then be divided into training and testing sets\. The binary classiﬁer model will be trained
- using the training set, and its performance will be assessed using the testing set\.We will explore and
- select diﬀerent classiﬁcation algorithms that are best suited for this type of data\. We may consider
- algorithms such as logistic regression, decision trees, and Random forest classiﬁers\. The algorithm will
- be selected based on its accuracy, R2 score, and any other methods necessary for calculating error\.
- 
-4) After choosing the algorithm, we will use the practice data set to train the binary classiﬁer model\.
- Then, we will assess the model's performance using the testing data set to gauge its precision, R2
- score, and F1 score\.
- 
-5) As a last step, we will utilize the trained binary classiﬁer model to assign the items in the inventory to
- one of two categories: "to be retained" or "to be removed." A list of the product IDs that must be kept
- and a diﬀerent list of the product IDs that must be deleted will be provided.
+<ins> **Geospatial Analysis</ins>:** Map the distribution of tree species in Buffalo, NY using geospatial analysis libraries like Geopandas. This may entail developing thematic maps, such as heat maps, to display the quantity and distribution of various tree species throughout the city.
 
-Our team will be able to undertake this research thanks to the source data we've chosen because
-it includes both active inventory and historical sales information. The historical sales data will
-enable us to pinpoint the products that aren't doing well, and the active inventory data will notify
-us of the items that are now in stock. These two data sources can be used to create a binary
-classiﬁer model that can correctly categorize the inventory's items as "to be retained" or "to be
-removed."
+<ins> **Environmental Factor Analysis</ins>:** To detect any relationships with tree species distribution, utilize statistical libraries such as numpy and Scikit-learn to add environmental characteristics such as climate, soil type, and land use into the analysis. This could include employing regression analysis or clustering.
+
+<ins> **Interpretation and Reporting</ins>:** Finally, assess the analysis results and report any findings. Using libraries such as Matplotlib, Seaborn, and Plotly, this may entail constructing visuals and summary statistics to explain the data in a clear and intelligible manner.
+
 
 <h2>Motivation:</h2>
 
-- The primary goal of this research is to help a retail company's inventory be as eﬃcient as possible.
-The company can cut inventory holding costs, boost sales and proﬁtability, and make better use
-of its resources by deciding which products should be kept and which ones should be dropped.
+<ins> **Conservation and Management</ins>:** The distribution of tree species in Buffalo can help guide conservation and management activities. Resources can be directed to where they are most needed by identifying locations with high or low abundance of specific species.
 
-- Another intriguing aspect of this investigation is the development of a binary classiﬁer model. The
-analysis oﬀers a great chance to apply various classiﬁcation algorithms and assess their
-effectiveness because binary classiﬁcation is a fundamental machine-learning problem.
+<ins> **Urban Planning</ins>:** Trees have various advantages in urban contexts, including improved air quality, reduced urban heat island effects, and aesthetic value. Understanding tree species distribution can assist urban planners in making informed decisions about where to plant trees and which species to prioritize.
 
-- The analysis may also oﬀer insighꢃul information about consumer behavior and preferences. The
-company can better understand what customers want by determining which products aren't
-selling well, and they can then change their inventory.
+<ins> **Climate Change Adaptation</ins>:** Understanding how tree species distribution may alter in the future will help inform adaptation measures as climate change continues to impact the planet.
 
-- In conclusion, the analysis is crucial for any retail company that wishes to stay effective, lucrative,
-and competitive. It oﬀers a chance to use machine learning methods on actual data, optimize
-inventories, and learn more about client behavior.
+<ins> **Public Engagement</ins>:** Mapping the distribution of tree species can help engage the public in learning and appreciating their city's natural resources. Citizens can become more aware of the worth of trees and the need of protecting them by sharing the results of the analysis.
+
+<h2>Task List:</h2>
+
+| Milestones | Activities | Due Date | Status |
+| --- | --- | --- | --- |
+| Data collection | Collect Tree Inventory dataset from Pendata Buffalo | 2023-05-07 | DONE |
+| Data Cleaning | Explore and Preprocess the data | 2023-05-07 | DONE | 
+| Progress Report | Reporting all milestones and status of activities with activities at risk | 2023-05-8 | DONE |
+| Data Exploration | Explore the data using python libraries | 2023-05-9 | IN PROGRESS |
+| | Plot distribution of tree species | 2023-05-10 | NOT STARTED (Delay expected) |
+| Data Analysis | Analyze species abundance by location | 2023-05-13 | NOT STARTED |
+| | Perform spatial corelation | 2023-05-13 | NOT STARTED |
+| Vizualization | Create interactive maps of analysis | 2023-05-15 | NOT STARTED (Delay expected) |
+| Presentation | Creating a YouTube video & uploading | 2023-05-16 | NOT STARTED (Delay expected) |
+| Report Writing | Writing the project report as README.md and submitting | 2023-05-16 | NOT STARTED (Delay expected) |
+
+<h2> Mitigation plan for activities that are in danger of delay:</h2>
+
+-Each activity in this progress report has a due date, and the milestones are listed in chronological order. The status column shows whether a task has been done, not started, or is expecting a delay. </br>
+
+-As of May 10th, data exploration will be in progress, and the plotting distribution of tree species is due on the same day. However, there is a risk of missing the May 10th deadline for plotting the distribution of tree species. To mitigate this delay, we can prioritize the analysis of species distribution by devoting more time to this work and, if required, limiting time spent on other activities.</br>
+
+-As you can see there are some more activities in the milestone such as visualization, presentation, and report writing are expected to delay. So, in order to address these potential delays, a plan is developed which is: the team should allocate additional work time, sensible distribution of work, and additional resources, as do multi-tasking and merge those activities to complete them before the due date. Also, consider changing the analysis approach, from the current approach if it is too time-consuming so as to complete visualization on time.

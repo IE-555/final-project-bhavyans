@@ -6,7 +6,7 @@
 ](mailto:ssathe@buffalo.edu), Rahul Haribhau Shelke[](mailto:rahulhar@buffalo.edu)[ ](mailto:rahulhar@buffalo.edu)[rahulhar@buffalo.edu](mailto:rahulhar@buffalo.edu)
 
   
- #### YouTube Video: https://youtu.be/VkQeY9OKz0M
+ #### YouTube Video: https://youtu.be/3qBEvmz2yrE
 </b>
 
 <h2>Task List</h2>
@@ -16,13 +16,13 @@
 | Data collection | Collect Tree Inventory dataset from Pendata Buffalo | 2023-05-07 | DONE |
 | Data Cleaning | Explore and Preprocess the data | 2023-05-07 | DONE | 
 | Progress Report | Reporting all milestones and status of activities with activities at risk | 2023-05-8 | DONE |
-| Data Exploration | Explore the data using python libraries | 2023-05-9 | IN PROGRESS |
-| | Plot distribution of tree species | 2023-05-10 | NOT STARTED (Delay expected) |
-| Data Analysis | Analyze species abundance by location | 2023-05-13 | NOT STARTED |
-| | Perform spatial corelation | 2023-05-13 | NOT STARTED |
-| Vizualization | Create interactive maps of analysis | 2023-05-15 | NOT STARTED (Delay expected) |
-| Presentation | Creating a YouTube video & uploading | 2023-05-16 | NOT STARTED (Delay expected) |
-| Report Writing | Writing the project report as README.md and submitting | 2023-05-16 | NOT STARTED (Delay expected) |
+| Data Exploration | Explore the data using python libraries | 2023-05-9 | DONE |
+| | Plot distribution of tree species | 2023-05-10 | DONE |
+| Data Analysis | Analyze species abundance by location | 2023-05-13 | DONE |
+| | Perform spatial corelation | 2023-05-13 | DONE |
+| Vizualization | Create interactive maps of analysis | 2023-05-15 | DONE |
+| Presentation | Creating a YouTube video & uploading | 2023-05-16 | DONE |
+| Report Writing | Writing the project report as README.md and submitting | 2023-05-16 | DONE |
 
 <h2>Introduction</h2>
 
